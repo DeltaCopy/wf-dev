@@ -47,14 +47,17 @@ body:
       placeholder: "e.g. Has the userChrome.css been modified ?"
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: testing-firefox
     attributes:
       label: Tested in Firefox
       description: Does this bug persist in Firefox?
+      multiple: false
       options:
-        - label: I can replicate this bug in Firefox
-          required: true
+        - I can replicate this bug in Firefox
+        - I cannot replicate this bug in Firefox
+    validations:
+      required: true
   - type: textarea
     id: what-happened-bug-screenshot-video
     attributes:
