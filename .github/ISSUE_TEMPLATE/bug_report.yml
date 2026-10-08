@@ -20,7 +20,7 @@ body:
     attributes:
       label: Waterfox version
       description: State the Waterfox version where you are encountering an issue.
-      placeholder: ".e.g. Waterfox 6.7.4"
+      placeholder: "e.g. Waterfox 6.7.4"
     validations:
       required: true
   - type: textarea
