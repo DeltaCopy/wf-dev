@@ -7,6 +7,8 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+
+        Feature requests belong in [Discussions](https://github.com/BrowserWorks/waterfox/discussions). Please do not submit feature requests as issues.
   - type: textarea
     id: what-happened-bug-info
     attributes:
@@ -16,27 +18,15 @@ body:
     validations:
       required: true
   - type: textarea
-    id: version-wf-release
+    id: troubleshooting-information
     attributes:
-      label: Waterfox version
-      description: State the Waterfox version where you are encountering an issue.
-      placeholder: "e.g. Waterfox 6.7.4"
-    validations:
-      required: true
-  - type: textarea
-    id: version-os
-    attributes:
-      label: Operating system
-      description: Which OS are you using?
-      placeholder: "e.g. Windows 11"
-    validations:
-      required: true
-  - type: textarea
-    id: additional-addons
-    attributes:
-      label: Addons
-      description: Any additional addons used?
-      placeholder: "e.g. uBlock Origin"
+      label: Troubleshooting information (about:support)
+      description: |
+        Open `about:support` in Waterfox, click **Copy raw data to clipboard**, and paste the result here.
+        Review the data and redact personal details, such as names in device labels or file paths, before posting it publicly.
+        If Waterfox cannot open or you cannot collect the data, explain why here instead.
+      placeholder: Paste the raw troubleshooting data here, or explain why it could not be collected.
+      render: json
     validations:
       required: true
   - type: textarea
@@ -74,4 +64,3 @@ body:
       placeholder: "Additional information which is relevant about the bug"
     validations:
       required: false
-  
